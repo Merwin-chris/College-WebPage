@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<title> PMU  </title>
+	<style>
+	
+	
+.topnav {
+  background-color: #3092E7;
+  overflow: hidden;
+  
+
+}
+
+
+.topnav a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.col-4 {
+  position: relative;
+  width: 33%;
+}
+
+.image {
+  display: block;
+  width: 80%;
+  height:100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #3F97E3;
+}
+.col-4:hover .overlay {
+  opacity: 1;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+footer
+{
+	 background-color:#3A3E41;
+	 color:white;
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+ul li {
+  border: 1px solid #ddd; 
+  margin-top: -1px; 
+  background-color: #f6f6f6; 
+  padding: 12px; 
+}
+#list{
+text-align:center;
+background-color:#3A3E41;
+color:white;
+}
+
+	</style>
+	
+	
+</head>
+
+<body>
+	<div style="text-align:center; background-color:#3A3E41">
+		<img src="PMU.png" alt="logo"/>
+	</div>
+	<div class="topnav" style="width:100%;text-align:center;padding:20px">
+			<a href="##">About</a>
+			<a href="Admission.html">Admissions</a>
+			<a href="academics.html">Academics</a>
+			<a href="#about">Student Portal</a>
+		</div>
+
+<br><br><br>
+
+<div class="slideshow-container">
+
+  
+  <div class="mySlides ">
+    <div class="numbertext"> </div>
+    <img src="img-1.jpg" style="width:100%">
+   
+  </div>
+
+  <div class="mySlides ">
+    <div class="numbertext"> </div>
+    <img src="img_2.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides ">
+    <div class="numbertext"> </div>
+    <img src="img-3.jpg" style="width:100%">
+    
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<br><br><br><br>
+
+<div class="container">
+	<div class="row">
+	<div class="col-4"  >
+		<img src="img-1.jpg" alt="Avatar" class="image">
+		<div class="overlay" >
+			<div class="text" >Academics</div>
+		</div>
+	</div>
+	<div class="col-4" >
+		<img src="forms_bg.jpg" alt="Avatar" class="image">
+		<div class="overlay">
+			<div class="text">Infrastructure</div>
+		</div>
+	</div>
+	<div class="col-4">
+		<ul>
+			<li id="list">News/Events</li>
+			<li>Workshop on "Systematic Literature Review - Hands on Approach" by Dr. P. Madhan Kumar
+				Department of Management Studies</li>
+			<li>LEADERSHIP TRAINING PROGRAMME Lecture given by Resource Person Ms.Kamali Rajesh</li>
+			<li>29th Convocation</li>
+		</ul>
+	</div>
+	
+	
+</div>
+</div>
+<br><br>
+<footer>
+<br>
+	<h3 style="text-align:center"> Periyar Maniammai Institute of Science & Technology </h3> <br><br>
+	<h6 style="text-align:left; margin-left:70px;">Location:<h6>
+	<p style="text-align:left; margin-left:70px;">  <br>Periyar Nagar, 
+	Vallam, Thanjavur - 613403,<br> Tamil Nadu, India</p>
+	<br><br>
+	<p style="margin-left:70px;"> Contact: +91 4363 264600 </p>
+	
+<br><br>
+</footer>
+
+<script>
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+	</script>
+</body>
+</html>
